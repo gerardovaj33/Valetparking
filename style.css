@@ -6,126 +6,376 @@
 }
 
 body{
-
     background:#1b1b1b;
-
 }
 
-.contenedor{
 
+/* INDEX */
+
+
+.contenedor{
     width:90%;
     margin:auto;
     padding:40px;
-
 }
 
 .fila-superior{
-
     display:flex;
     justify-content:space-between;
     align-items:center;
-    margin-bottom:50px;
-
+    margin-bottom:40px;
 }
 
 .card{
-
     background:white;
     width:230px;
     padding:20px;
     text-align:center;
     font-size:24px;
     font-weight:bold;
-
 }
 
 .titulo{
-
     background:#FFD84D;
     padding:20px 70px;
     border-radius:12px;
     font-size:50px;
     font-weight:bold;
-
 }
 
-.contenido{
-
-    display:flex;
-    justify-content:center;
-    gap:60px;
-    align-items:flex-start;
-
-}
-
-.imagen{
-
-    width:430px;
-
-}
-
-.centro{
-
-    display:flex;
-    flex-direction:column;
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
     align-items:center;
-
 }
 
-.descripcion{
+.img1,.img2{
+    width:100%;
+    max-width:350px;
+    margin:auto;
+}
 
+.descripcion,.card-inferior{
     background:white;
-    width:500px;
     padding:25px;
     text-align:center;
-    font-size:28px;
-    margin-bottom:25px;
-
+    font-size:22px;
 }
 
-.imagen2{
-
-    width:430px;
-    margin-bottom:30px;
-
+.boton-centro{
+    display:flex;
+    justify-content:center;
+    margin-top:40px;
 }
 
 .btn{
+    width:300px;
+    height:55px;
+    background:#FFD84D;
+    border:none;
+    font-size:26px;
+    font-weight:bold;
+    cursor:pointer;
+}
 
+
+/* LOGIN + REGISTER */
+
+
+.login-contenedor,
+.register-contenedor{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-titulo,
+.register-titulo{
+    color:#FFD84D;
+    font-size:45px;
+    margin-bottom:25px;
+}
+
+.login-form,
+.register-form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+
+.input{
+    width:320px;
+    height:50px;
+    padding:10px;
+    font-size:18px;
+    border:none;
+    border-radius:5px;
+    outline:none;
+}
+
+/* BOTÓN LOGIN */
+.btn-login-link{
     width:320px;
     height:55px;
-    border:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     background:#FFD84D;
-    font-size:28px;
-    cursor:pointer;
-    margin-bottom:25px;
-
+    color:black;
+    font-size:22px;
+    font-weight:bold;
 }
 
-.btn:hover{
-
-    background:gold;
-
+/* REGISTRO LOGIN */
+.registro{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-top:10px;
 }
 
-.btn-pequeño{
-
-    width:180px;
-    height:50px;
-    border:none;
-    background:#FFD84D;
-    font-size:24px;
-    cursor:pointer;
-
-}
-
-.card-inferior{
-
+.registro span{
     background:white;
-    width:340px;
-    padding:20px;
-    text-align:center;
-    font-size:24px;
-    margin-top:40px;
+    color:black;
+    font-size:14px;
+    padding:6px 10px;
+    border-radius:6px;
+}
 
+.btn-registro{
+    color:#FFD84D;
+    text-decoration:none;
+    border:1px solid #FFD84D;
+    padding:8px 12px;
+    font-size:14px;
+}
+
+
+/* PANEL */
+
+
+.panel{
+    width:90%;
+    margin:auto;
+    padding:40px;
+    color:white;
+}
+
+.panel-titulo{
+    text-align:center;
+    color:#FFD84D;
+    font-size:40px;
+    margin:30px 0;
+}
+
+.panel-arriba{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:40px;
+}
+
+.panel-datos{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.dato{
+    background:white;
+    color:black;
+    padding:18px;
+    width:280px;
+    font-size:18px;
+    border-radius:8px;
+}
+
+.panel-img{
+    width:300px;
+    border-radius:10px;
+}
+
+.panel-abajo{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-top:20px;
+}
+
+.panel-box{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+    width:300px;
+}
+
+.panel-box p{
+    background:white;
+    color:black;
+    padding:20px;
+    width:100%;
+    text-align:center;
+    border-radius:8px;
+    font-size:18px;
+}
+
+.btn-panel{
+    width:200px;
+    height:55px;
+    background:#FFD84D;
+    border:none;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:6px;
+}
+
+.btn-panel:hover{
+    background:gold;
+}
+
+
+/* REGISTRO USUARIO */
+
+
+.registro-main{
+    width:90%;
+    margin:auto;
+    padding:40px;
+    color:white;
+}
+
+.registro-titulo{
+    text-align:center;
+    color:#FFD84D;
+    font-size:40px;
+    margin-bottom:30px;
+}
+
+.registro-grid{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.registro-box{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    width:300px;
+}
+
+.registro-box h2{
+    background:#FFD84D;
+    color:black;
+    padding:12px;
+    text-align:center;
+    border-radius:8px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.registro-img-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.registro-img{
+    height:600px;
+    width:auto;
+    border-radius:10px;
+    margin:20px 0;
+}
+
+.registro-btn-box{
+    display:flex;
+    justify-content:center;
+    margin-top:30px;
+}
+
+.btn-registro-final{
+    width:250px;
+    height:55px;
+    background:#FFD84D;
+    color:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    text-decoration:none;
+    font-size:18px;
+    border-radius:6px;
+}
+
+.btn-registro-final:hover{
+    background:gold;
+}
+
+
+/* TICKET */
+
+
+.ticket-main{
+    width:90%;
+    margin:auto;
+    padding:40px;
+    color:white;
+}
+
+.ticket-titulo{
+    text-align:center;
+    color:#FFD84D;
+    font-size:40px;
+    margin-bottom:30px;
+}
+
+.ticket-grid{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.ticket-img{
+    height:500px;
+    width:auto;
+    border-radius:10px;
+}
+
+.ticket-center{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    align-items:center;
+}
+
+.ticket-btn-box{
+    display:flex;
+    justify-content:center;
+    margin-top:40px;
+}
+
+.btn-ticket{
+    width:250px;
+    height:55px;
+    background:#FFD84D;
+    color:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    text-decoration:none;
+    font-size:18px;
+    border-radius:6px;
+}
+
+.btn-ticket:hover{
+    background:gold;
 }
