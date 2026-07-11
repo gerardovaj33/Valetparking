@@ -669,3 +669,31 @@ REGISTER PRO
     background: gold;
     transform: scale(1.05);
 }
+
+.register-formulario{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+
+.btn-register{
+    border:none;
+    cursor:pointer;
+}
+
+.mensaje-formulario{
+    width:330px;
+    padding:10px;
+    text-align:center;
+    border-radius:8px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.mensaje-formulario.error{
+    background:#ffffff;
+    color:#b00020;
+    border:2px solid #b00020;
+}
